@@ -11,7 +11,7 @@ class Reshape(object):
         
 
 
-def GetMNISTDataLoaders(NUM_TRAIN, NUM_VAL, batch_size=64):
+def GetCIFAR10DataLoaders(NUM_TRAIN, NUM_VAL, batch_size=64):
     
     
     transform = Compose([ToTensor(),
@@ -35,5 +35,3 @@ def GetMNISTDataLoaders(NUM_TRAIN, NUM_VAL, batch_size=64):
                                       batch_size=batch_size)  
     
     return mnist_train_dataloader, mnist_val_dataloader, mnist_test_dataloader
-
-
